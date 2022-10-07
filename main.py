@@ -9,6 +9,7 @@ from telethon import TelegramClient, events, sync
 from tkinter import *
 from tkinter import messagebox
 import pandas as pd
+import Constants as Constatns
 
 
 
@@ -53,7 +54,7 @@ def main():
     # Create the Updater and pass it your bot's token.
     # Make sure to set use_context=True to use the new context based callbacks
     # Post version 12 this will no longer be necessary
-    updater = Updater("5586549693:AAEImZ_Fr2nplPMrIDp-Q26_1p81tWUiZ5Y", use_context=True)
+    updater = Updater(Constatns.API_TOKEN, use_context=True)
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
     # on different commands - answer in Telegram
@@ -68,3 +69,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+
+CheckoutForGit
