@@ -1,13 +1,10 @@
 import logging
-from msilib.schema import Upgrade
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from finvizfinance.screener.overview import Overview
 from finvizfinance.quote import finvizfinance
 import pandas as pd
 from twilio.rest import Client
 from telethon import TelegramClient, events, sync
-from tkinter import *
-from tkinter import messagebox
 import pandas as pd
 import Constants as Constatns
 
@@ -70,6 +67,3 @@ def main():
 if __name__ == '__main__':
     main()
 
-
-
-CheckoutForGit
